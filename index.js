@@ -11,7 +11,7 @@ const __dirname = dirname(__filename);
 app.use(express.static(__dirname + '/public'));
 
 app.get('/', (req, res) => {
-  res.sendFile('public/index.html', {root: __dirname});
+  res.sendFile('index.html', {root: __dirname});
 });
 
 app.listen(port, () => {
